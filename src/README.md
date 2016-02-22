@@ -1,7 +1,7 @@
-## This folder contains all source code
+# This folder contains all source code
+--
 
----
-### 1. Brife description of source code
+## Brife description of source code
 	
 	src.
 	 ├── preprocess.py 
@@ -11,3 +11,12 @@
 	 		├── (dummy data goes here)
 	data.
 	 ├── (data goes here)
+
+
+## Get Start
+
+### Install all dependecies
+
+	$ pip install -r requirements.txt
+	
+
