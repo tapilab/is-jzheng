@@ -19,15 +19,10 @@ def load_file(path):
     res = []
 
     for line in lines:
-    	
     	line = json.loads(line)['text'].lower()
-    	
-    	line = re.sub(r'\n\t', ' ', line)
+    	line = re.sub(r'\n|\t', ' ', line)
     	line = line.encode('utf-8') 
-    	
- 
     	line = line.strip().translate(None, string.punctuation)
-    
     	res.append(line)
 
     return res
@@ -50,8 +45,8 @@ def write_file(file , path):
 
 
 if __name__ == "__main__":
-	path = "../data/cmu/review/review.txt"
-	path_write = "../data/cmu/review/processed_comments.json"
+	path = "../data/review.txt"
+	path_write = "../data/processed_comments.txt"
 	comments = load_file(path)
 	write_file(comments, path_write)
 
