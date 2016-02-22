@@ -24,10 +24,13 @@ if __name__ == '__main__':
 
 
 
-	file_path = "../data/cmu/review/processed_comments.json"
+	file_path = "./dummy/processed_reviews.txt"
 
-	model_path = "model"
-	vector_path = "vector"
+	# store the model to file
+	model_path = "./dummy/model.model"
+
+	# save processed vector to file
+	vector_path = "./dummy/vector.txt"
 
 	count = multiprocessing.cpu_count()
 	
