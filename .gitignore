@@ -6,3 +6,7 @@
 *~
 *.ipynb_checkpoints
 *.pyc
+
+# model and vector.txt
+src/dummy/model.model
+src/dummy/vector.txt
