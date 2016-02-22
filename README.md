@@ -1,4 +1,4 @@
-# ms-project-template
+# ms-project
 A template for students doing M.S. or undergraduate independent studies/theses.
 
 See instructions here: [Instructions.md](Instructions.md)
@@ -23,9 +23,27 @@ Here's how other people have tried to solve this problem, with a few links/citat
 
 ## Data
 
-Here is a description of the data you collected.
+#### Data Description
+The datas are collected from [TripAdvisor](http://www.tripadvisor.com).
 
-Here is an example data record.
+* Crawl datas of hotels in several cities(Current from Chicago, New York, San Francisco, Las Vegas, Orlando)
+* Extracted several fields but focus to only full review
+* ~850000 reviews have been collected.
+* Dataset is not set yet. More cities will be added and will have more datas.
+ 
+
+#### Data Format
+There will be only one file `reviews.txt` which contains all collected raw datas. Within this file, you will see the following structure:
+
+	{"key1":val1 , "key2":val2 , ... , "text": <comments 1>}	
+	{"key1":val1 , "key2":val2 , ... , "text": <comments 2>}
+	...
+
+Each line is in JSON format and represents an independent review. The `value` comes after `text` key is a review of a hotel.
+
+(The raw data format could be changed in the future.)
+
+
 
 ## Methods
 
